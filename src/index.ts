@@ -22,7 +22,7 @@ server.listen(3000, (err, address) => {
 });
 
 const mapUsers = (users: UserData[]): User[] => {
-  const result = Users.map(u => mapUser(u);
+  const result = Users.map(u => mapUser(u));
 
   return result;
 };
@@ -35,5 +35,4 @@ const mapUser = (u: UserData): User => ({
   phone: u.phone,
   userStatus: u.userStatus,
   username: u.username,
-  requiresModeration: u.requiresModeration,
 });
